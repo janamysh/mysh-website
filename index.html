@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jana Moysich</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #F0E7D5;
+    --ink: #212842;
+    --vanilla: #F0E7D5;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Lato', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+  }
+  a{ color:inherit; text-decoration:none; }
+
+  header{
+    padding: 5rem 6vw 3rem;
+    text-align:center;
+  }
+  header h1{
+    font-size: clamp(2.6rem, 7vw, 4.6rem);
+    font-weight:900;
+    letter-spacing:0.01em;
+  }
+
+  section{ padding: 3.5rem 6vw; }
+
+  h2.section-title{
+    font-size: 1.8rem;
+    font-weight:700;
+    margin-bottom: 2rem;
+    text-align:center;
+  }
+
+  .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:0.14em;
+    font-size:0.75rem;
+    font-weight:700;
+    margin-bottom:1rem;
+    opacity:0.75;
+  }
+
+  /* ---- CV ---- */
+  .cv-grid{
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .tl-item{
+    display:grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1.2rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(33,40,66,0.15);
+  }
+  .tl-item:last-child{ border-bottom:none; }
+  .tl-year{ font-weight:700; }
+  .tl-role{ font-weight:700; margin-bottom:0.15rem; }
+  .tl-desc{ font-size:0.92rem; opacity:0.8; }
+
+  /* ---- Books ---- */
+  .books-section{ max-width: 600px; margin:0 auto; text-align:center; }
+  .gr_custom_container_{ border:1px solid rgba(33,40,66,0.2) !important; border-radius:10px; padding:1.2rem 1rem !important; background:rgba(33,40,66,0.04) !important; color:var(--ink) !important; width:100% !important; max-width:320px; margin:0 auto; text-align:left; }
+  .gr_custom_header_{ border-bottom:1px solid rgba(33,40,66,0.2) !important; font-weight:700 !important; }
+  .gr_custom_header_ a{ color:var(--ink) !important; }
+  .gr_custom_each_container_{ border-bottom:1px solid rgba(33,40,66,0.1) !important; }
+  .gr_custom_title_ a, .gr_custom_author_ a{ color:var(--ink) !important; }
+  .gr_custom_author_{ color:rgba(33,40,66,0.7) !important; }
+
+  /* ---- Side Projects (inverted) ---- */
+  .side-projects{
+    background: var(--ink);
+    color: var(--vanilla);
+  }
+  .side-projects h2.section-title{ color: var(--vanilla); }
+  .box-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .box{
+    background: rgba(240,231,213,0.08);
+    border: 1px solid rgba(240,231,213,0.25);
+    border-radius: 10px;
+    padding: 2rem;
+    min-height: 220px;
+  }
+  .box h3{ font-size:1.2rem; margin-bottom:0.6rem; }
+  .box p{ font-size:0.9rem; opacity:0.8; line-height:1.5; }
+  .placeholder{
+    font-style: italic;
+    opacity: 0.6;
+  }
+  @media (max-width: 680px){
+    .box-grid{ grid-template-columns: 1fr; }
+    .tl-item{ grid-template-columns: 1fr; gap:0.2rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Jana Moysich</h1>
+</header>
+
+<section id="lebenslauf">
+  <h2 class="section-title">Lebenslauf</h2>
+  <div class="cv-grid">
+    <div class="eyebrow">Berufserfahrung</div>
+    <div class="tl-item">
+      <div class="tl-year">seit 2024</div>
+      <div>
+        <div class="tl-role">Media Product Owner, DER SPIEGEL</div>
+        <div class="tl-desc">Zuvor Content Managerin (2023–24). Hamburg.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2020–2023</div>
+      <div>
+        <div class="tl-role">Kommunikationsberaterin, FAKTOR 3 AG</div>
+        <div class="tl-desc">Von Junior- bis Senior-Beraterin / Account Lead. Hamburg.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2017–2020</div>
+      <div>
+        <div class="tl-role">Marketing &amp; CRM, FREE NOW (ehem. mytaxi)</div>
+        <div class="tl-desc">Mehrere Stationen, u. a. Onsite Marketing Manager. Hamburg.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2017</div>
+      <div>
+        <div class="tl-role">Datenjournalismus-Fellow, Ringier AG</div>
+        <div class="tl-desc">Google News Labs Interaktiv-Team, Zürich.</div>
+      </div>
+    </div>
+
+    <div class="eyebrow" style="margin-top:2rem;">Ausbildung</div>
+    <div class="tl-item">
+      <div class="tl-year">2024–2026</div>
+      <div>
+        <div class="tl-role">MBA, General Management — Universität Hamburg</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">2014–2017</div>
+      <div>
+        <div class="tl-role">B.A. Journalismus &amp; Public Relations — Westfälische Hochschule</div>
+        <div class="tl-desc">Austauschsemester: Atma Jaya Catholic University, Indonesien.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="side-projects" id="projekte">
+  <h2 class="section-title">Side Projects</h2>
+  <div class="box-grid">
+    <div class="box">
+      <h3>Soundbett – Online-Magazin</h3>
+      <p>Unabhängiges Online-Magazin über Podcasting, die Podcast-Branche und die Creator Economy.</p>
+      <p style="margin-top:1rem;"><a href="https://soundbett.de/" target="_blank" rel="noopener" style="text-decoration:underline;">soundbett.de →</a></p>
+    </div>
+    <div class="box">
+      <h3>Soundbett – Podcast-Newsletter</h3>
+      <p>Alle zwei Wochen empfehle ich im Newsletter einen Podcast, der sich zu hören lohnt.</p>
+      <p style="margin-top:1rem;"><a href="https://soundbett.substack.com/" target="_blank" rel="noopener" style="text-decoration:underline;">soundbett.substack.com →</a></p>
+    </div>
+  </div>
+</section>
+
+
+<section id="impressum" style="max-width:600px; margin:0 auto;">
+  <h2 class="section-title">Impressum</h2>
+  <p style="text-align:center; line-height:1.7;">
+    Jana Moysich<br>
+    Martin-Luther-Straße 8<br>
+    20457 Hamburg<br>
+    E-Mail: janamoysich at gmail punkt com
+  </p>
+  <p style="text-align:center; font-size:0.85rem; opacity:0.75; margin-top:1rem;">
+    Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Jana Moysich (Anschrift wie oben)
+  </p>
+</section>
+
+</body>
+</html>
